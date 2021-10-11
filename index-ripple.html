@@ -10,19 +10,20 @@
         <meta name="keywords" content="bootstrap 4, premium, marketing, multipurpose" />
         <meta content="Shreethemes" name="author" />
         <!-- favicon -->
-        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="shortcut icon" href="images/favicon.ico">
         <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <!-- MK Lightbox -->
         <link href="css/mklb.css" rel="stylesheet" type="text/css" />
         <!-- Icon -->
         <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+                  
         <!-- SLIDER -->
-        <link rel="stylesheet" href="css/tiny-slider.css"/>    
+        <link rel="stylesheet" href="css/tiny-slider.css"/>
         <!-- Custom Css -->
-        <link href="css/style-dark.css" rel="stylesheet" type="text/css" id="theme-opt" />
-        <link href="css/colors/blue.css" rel="stylesheet" id="color-opt">
-
+        <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+        <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
+        
     </head>
 
     <body data-bs-spy="scroll" data-bs-target="#navbar-navlist" data-bs-offset="20">
@@ -45,14 +46,15 @@
         <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky">
     		<div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="images/logo.png" height="18" alt="">
+                    <img src="images/logo.png" class="l-dark" height="18" alt="">
+                    <img src="images/logo-light.png" class="l-light" height="18" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span data-feather="menu" class="fea icon-md"></span>
                 </button><!--end button-->
 
                 <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul id="navbar-navlist" class="navbar-nav navbar-nav-link mx-auto">
+                    <ul id="navbar-navlist" class="navbar-nav mx-auto">
                         <li class="nav-item">
                             <a class="nav-link active" href="#home">Home</a>
                         </li><!--end nav item-->
@@ -90,7 +92,7 @@
                         </li><!--end nav item-->
                     </ul>
 
-                    <ul class="list-unstyled mb-0 mt-2 mt-sm-0 social-icon">
+                    <ul class="list-unstyled mb-0 mt-2 mt-sm-0 social-icon light-social-icon">
                         <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-facebook"></i></a></li>
                         <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-twitter"></i></a></li>
                         <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-instagram"></i></a></li>
@@ -101,28 +103,28 @@
         <!-- Navbar End -->
 
         <!-- HOME START-->
-        <section class="bg-home bg-light d-table w-100" style="background:url('images/home/01.png') center center" data-jarallax='{"speed": 0.5}' id="home">
+        <section class="bg-home d-flex align-items-center" style="background-image:url('images/home/02.jpg')" id="home">
+            <div class="bg-overlay"></div>
             <div class="container">
-                <div class="row mt-5 align-items-center">
-                    <div class="col-lg-12">
-                        <div class="title-heading mt-5">
-                            <h6 class="sub-title">Hey ! This is Cristino</h6>
-                            <h1 class="heading text-primary mb-3">UX / UI Designer</h1>
-                            <p class="para-desc text-muted">Obviously I'm a Web Designer. Web Developer with over 3 years of experience. Experienced with all stages of the development cycle for dynamic web projects.</p>
-                            <div class="mt-4 pt-2">
-                                <a href="javascript:void(0)" class="btn btn-primary rounded mb-2 me-2">Hire me</a>
-                                <a href="javascript:void(0)" class="btn btn-outline-primary rounded mb-2">Download CV <i data-feather="download" class="fea icon-sm"></i></a>
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 text-center">
+                        <div class="title-heading mt- mt-sm-0">
+                            <img src="images/home/hero.jpg" class="img-fluid rounded-circle" alt="">
+                            <h1 class="heading text-primary mt-3">Cristino Murphy</h1>
+                            <h6 class="sub-title text-light title-dark">I'm a Passionate <span class="element text-primary" data-elements="Web Designer, Web Developer, Photographer"></span><span id="typed" class="text-primary"></span></h6>
+                            <div class="mt-4">
+                                <a href="javascript:void(0)" class="btn btn-pill btn-primary">Download CV <i data-feather="download" class="fea icon-sm"></i></a>
                             </div>
                         </div>
                     </div><!--end col-->
                 </div><!--end row-->
             </div><!--end container--> 
-            <a href="#about" data-scroll-nav="1" class="mouse-icon rounded-pill bg-transparent mouse-down">
+            <a href="#about" data-scroll-nav="1" class="mouse-icon mouse-icon-white rounded-pill bg-transparent mouse-down">
                 <span class="wheel position-relative d-block mover"></span>
             </a>
         </section><!--end section-->
         <!-- HOME END-->
-        
+
         <!-- About Start -->
         <section class="section pb-3" id="about">
             <div class="container">
@@ -1181,8 +1183,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-12">
                         <div class="custom-form mb-sm-30">
-                            <!-- <form method="post" name="myForm" onsubmit="return validateForm()"> -->
-                                <form method="post" name="myForm" data-netlify-recaptcha="true" data-netlify="true">
+                            <form method="post" name="myForm" onsubmit="return validateForm()">
                                 <p id="error-msg"></p>
                                 <div id="simple-msg"></div>
                                 <div class="row">
@@ -1208,14 +1209,11 @@
 
                                     <div class="col-lg-6">
                                         <div class="form-group">
-                                            <textarea name="comments" id="comments" rows="3" class="form-control border rounded" placeholder="Your Message :"></textarea>
+                                            <textarea name="comments" id="comments" rows="4" class="form-control border rounded" placeholder="Your Message :"></textarea>
                                         </div>
                                     </div><!--end col-->
 
-                                    
-                                        
-                                    </div>
-                                    <div class="col-sm-12 text-end"><div class="col-sm-12 text-end" data-netlify-recaptcha="true">
+                                    <div class="col-sm-12 text-end">
                                         <button type="submit" id="submit" name="send" class="btn btn-primary">Send Message</button>
                                     </div>
                                 </div>
@@ -1260,6 +1258,7 @@
         <!-- Back to top -->
 
         <!-- javascript -->
+        <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
         <!-- SLIDER -->
         <script src="js/tiny-slider.js "></script>
@@ -1273,11 +1272,24 @@
         <script src="js/counter.init.js"></script>
         <!-- Feather icon -->
         <script src="js/feather.min.js"></script>
-        <!-- Parallax -->
-        <script src="js/parallax.js"></script>
+        <!-- Ripples -->
+        <script src="js/jquery.ripples-min.js"></script>
+        <script src="js/ripple.init.js"></script>
+        <!-- Typed -->
+        <script src="js/typed.js"></script>
         
         <!-- Main Js -->
         <script src="js/app.js"></script>
-    </body>
 
+        <script>
+            var typed = new Typed('#typed', {
+                stringsElement: '#typed-strings',
+                typeSpeed: 200,
+                loop: true,
+                strings: [
+                    'Web Designer', 'Web Developer', 'Photographer',
+                ],
+            });
+        </script>
+    </body>
 </html>

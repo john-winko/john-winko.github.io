@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>John Winko - Personal Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Bootstrap 4 Landing Page Template" />
+    <meta name="keywords" content="bootstrap 4, premium, marketing, multipurpose" />
+    <meta content="Shreethemes" name="author" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!-- Bootstrap -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- MK Lightbox -->
+    <link href="/css/mklb.css" rel="stylesheet" type="text/css" />
+    <!-- SLICK SLIDER -->
+    <link rel="stylesheet" href="/css/tiny-slider.css" />
+    <!-- Icon -->
+    <link href="/css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+    <!-- Custom Css -->
+    <link href="/css/style-dark.css" rel="stylesheet" type="text/css" id="theme-opt" />
+    <link href="/css/colors/blue.css" rel="stylesheet" id="color-opt">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-navlist" data-bs-offset="20">
+    <!-- Loader -->
+    <div id="preloader">
+        <div id="status">
+            <div class="logo">
+                <img src="/images/Icons/JW_Logo.svg" height="20" class="d-block mx-auto" alt="">
+            </div>
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Loader -->
+
+    <!-- Navbar Start -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky">
+        <div class="container">
+            <a class="navbar-brand" href="/index-parallax.html">
+                <img src="/images/Icons/JW_Logo_white.svg" height="30" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span data-feather="menu" class="fea icon-md"></span>
+            </button>
+            <!--end button-->
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul id="navbar-navlist" class="navbar-nav navbar-nav-link mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index-parallax.html">Home</a>
+                    </li>
+                    <!--end nav item-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index-parallax.html#services">Skills</a>
+                    </li>
+                    <!--end nav item-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index-parallax.html#resume">Resume</a>
+                    </li>
+                    <!--end nav item-->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Portfolio</a>
+                    </li>
+                    <!--end nav item-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index-parallax.html#news">Blog</a>
+                    </li>
+                    <!--end nav item-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index-parallax.html#contact">Contact</a>
+                    </li>
+                    <!--end nav item-->
+
+                </ul>
+
+                <ul class="list-unstyled mb-0 mt-2 mt-sm-0 social-icon">
+                    <li class="list-inline-item"><a href="https://www.facebook.com/john.winko" target="_blank"><i
+                                class="mdi mdi-facebook"></i></a></li>
+                    <li class="list-inline-item"><a href="https://twitter.com/JohnWinko" target="_blank"><i
+                                class="mdi mdi-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="https://github.com/john-winko" target="_blank"><i
+                                class="mdi mdi-github-box"></i></a></li>
+                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/john-winko/" target="_blank"><i
+                                class="mdi mdi-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <!--end container-->
+    </nav>
+    <!--end navbar-->
+    <!-- Navbar End -->
+
+    <!-- Home Start -->
+    <section class="bg-half d-table w-100" style="background: url('/images/home/bg-pages.jpg')center center;">
+        <div class="bg-overlay bg-overlay-white"></div>
+        <div class="container">
+            <div class="row mt-5 justify-content-center">
+                <div class="col-lg-12 text-center">
+                    <div class="page-next-level">
+                        <h4 class="title"> Projects & Works </h4>
+                        <ul class="page-next bg-light d-inline-block py-2 px-4 mt-3 rounded mb-0">
+                            <li><a href="/index-parallax.html" class="text-dark">Home</a></li>
+                            <li>
+                                <span class="text-primary"> Portfolio</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+    </section>
+    <!--end section-->
+    <!-- Home End -->
+
+    <!-- Projects End -->
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <ul class="col portfolioFilter text-center mb-0" id="filter">
+                    <li class="list-inline-item mt-2"><a href="javascript:void(0)"
+                            class="categories tab-active shadow active text-dark me-2 py-2 px-3 rounded"
+                            onclick="filterSelection('all')">All</a></li>
+                    <li class="list-inline-item mt-2"><a href="javascript:void(0)"
+                            class="categories tab-active shadow text-dark me-2 py-2 px-3 rounded"
+                            onclick="filterSelection('challenges')">Coding Challenges</a></li>
+                    <li class="list-inline-item mt-2"><a href="javascript:void(0)"
+                            class="categories tab-active shadow text-dark me-2 py-2 px-3 rounded"
+                            onclick="filterSelection('applications')">Applications</a></li>
+                    <li class="list-inline-item mt-2"><a href="javascript:void(0)"
+                            class="categories tab-active shadow text-dark me-2 py-2 px-3 rounded"
+                            onclick="filterSelection('tools')">Tools</a></li>
+                    <li class="list-inline-item mt-2"><a href="javascript:void(0)"
+                            class="categories tab-active shadow text-dark me-2 py-2 px-3 rounded"
+                            onclick="filterSelection('opensource')">Open Source Work</a></li>
+                </ul>
+            </div>
+            <!-- Gallary -->
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mt-4 pt-2 filter-box applications">
+                    <div class="item-box portfolio-box rounded shadow bg-white overflow-hidden">
+                        <div class="portfolio-box-img position-relative overflow-hidden">
+                            <img class="item-container img-fluid mx-auto" src="/images/portfolio/1.jpg" alt="1" />
+                            <div class="overlay-work">
+                                <div class="work-content text-center">
+                                    <a href="javascript:void(0)" data-src="/images/portfolio/1.jpg" data-gallery="myGal"
+                                        class="text-light work-icon bg-dark d-inline-block rounded-pill mfp-image"><i
+                                            data-feather="camera" class="fea icon-sm image-icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallary-title py-4 text-center">
+                            <h5><a href="/Portfolio/poeacolyte.html" class="title text-dark">POE (Path of Exile) Acolyte</a></h5>
+                            <span>Application</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mt-4 pt-2 filter-box challenges">
+                    <div class="item-box portfolio-box rounded shadow bg-white overflow-hidden">
+                        <div class="portfolio-box-img position-relative overflow-hidden">
+                            <img class="item-container img-fluid mx-auto" src="/images/portfolio/2.jpg" alt="1" />
+                            <div class="overlay-work">
+                                <div class="work-content text-center">
+                                    <a href="javascript:void(0)" data-src="/images/portfolio/2.jpg" data-gallery="myGal"
+                                        class="text-light work-icon bg-dark d-inline-block rounded-pill mfp-image"><i
+                                            data-feather="camera" class="fea icon-sm image-icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallary-title py-4 text-center">
+                            <h5><a href="/Portfolio/hundo.html" class="title text-dark">Hundo (0 to 100)</a>
+                            </h5>
+                            <span>Coding Challenge</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mt-4 pt-2 filter-box challenges">
+                    <div class="item-box portfolio-box rounded shadow bg-white overflow-hidden">
+                        <div class="portfolio-box-img position-relative overflow-hidden">
+                            <img class="item-container img-fluid mx-auto" src="/images/portfolio/3.jpg" alt="1" />
+                            <div class="overlay-work">
+                                <div class="work-content text-center">
+                                    <a href="javascript:void(0)" data-src="/images/portfolio/3.jpg" data-gallery="myGal"
+                                        class="text-light work-icon bg-dark d-inline-block rounded-pill mfp-image"><i
+                                            data-feather="camera" class="fea icon-sm image-icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallary-title py-4 text-center">
+                            <h5><a href="/Portfolio/rewind.html" class="title text-dark">Rewind (Reverse String)</a></h5>
+                            <span>Coding Challenge</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mt-4 pt-2 filter-box challenges">
+                    <div class="item-box portfolio-box rounded shadow bg-white overflow-hidden">
+                        <div class="portfolio-box-img position-relative overflow-hidden">
+                            <img class="item-container img-fluid mx-auto" src="/images/portfolio/4.jpg" alt="1" />
+                            <div class="overlay-work">
+                                <div class="work-content text-center">
+                                    <a href="javascript:void(0)" data-src="/images/portfolio/4.jpg" data-gallery="myGal"
+                                        class="text-light work-icon bg-dark d-inline-block rounded-pill mfp-image"><i
+                                            data-feather="camera" class="fea icon-sm image-icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallary-title py-4 text-center">
+                            <h5><a href="/Portfolio/fizzbuzz.html" class="title text-dark">Fizz Buzz</a></h5>
+                            <span>Coding Challenge</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mt-4 pt-2 filter-box challenges">
+                    <div class="item-box portfolio-box rounded shadow bg-white overflow-hidden">
+                        <div class="portfolio-box-img position-relative overflow-hidden">
+                            <img class="item-container img-fluid mx-auto" src="/images/portfolio/5.jpg" alt="1" />
+                            <div class="overlay-work">
+                                <div class="work-content text-center">
+                                    <a href="javascript:void(0)" data-src="/images/portfolio/5.jpg" data-gallery="myGal"
+                                        class="text-light work-icon bg-dark d-inline-block rounded-pill mfp-image"><i
+                                            data-feather="camera" class="fea icon-sm image-icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallary-title py-4 text-center">
+                            <h5><a href="/Portfolio/tacocat.html" class="title text-dark">Taco Cat (Palindrome)</a></h5>
+                            <span>Coding Challenge</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mt-4 pt-2 filter-box challenges applications">
+                    <div class="item-box portfolio-box rounded shadow bg-white overflow-hidden">
+                        <div class="portfolio-box-img position-relative overflow-hidden">
+                            <img class="item-container img-fluid mx-auto" src="/images/portfolio/6.jpg" alt="1" />
+                            <div class="overlay-work">
+                                <div class="work-content text-center">
+                                    <a href="javascript:void(0)" data-src="/images/portfolio/6.jpg" data-gallery="myGal"
+                                        class="text-light work-icon bg-dark d-inline-block rounded-pill mfp-image"><i
+                                            data-feather="camera" class="fea icon-sm image-icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallary-title py-4 text-center">
+                            <h5><a href="/Portfolio/loanshark.html" class="title text-dark">Loan Shark</a></h5>
+                            <span>Application, Coding Challenge</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end container-->
+
+
+
+        <div class="container-fluid mt-100 mt-60">
+            <div class="rounded-pill py-5" style="background: url('/images/hireme.jpg') center center;">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 text-center">
+                            <h4 class="text-light title-dark">I Am Available For Freelancer Projects.</h4>
+                            <p class="text-white-50 mx-auto mt-4 para-desc">Currently doing remote/evening work.
+                                Available full-time as early as February 2022.</p>
+                            <div class="mt-4">
+                                <a href="javascript:void(0)" class="btn btn-primary mouse-down">Hire me <i
+                                        data-feather="chevron-down" class="fea icon-sm"></i></a>
+                            </div>
+                        </div>
+                        <!--end col-->
+                    </div>
+                    <!--end row-->
+                </div>
+                <!--end container-->
+            </div>
+            <!--end div-->
+        </div>
+        <!--end container fluid-->
+
+        <div class="container mt-100 mt-60">
+            <div class="row">
+                <div class="col-md-4 mt-4 pt-2">
+                    <div class="contact-detail text-center">
+                        <div class="icon">
+                            <i data-feather="phone" class="fea icon-md"></i>
+                        </div>
+                        <div class="content mt-4">
+                            <h5 class="title text-uppercase">Phone</h5>
+                            <p class="text-muted">Currently taking calls after business <br>hours (Central Time).</p>
+                            <a href="tel:+1904-703-4856" class="text-primary">(904) 703-4845</a>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+
+                <div class="col-md-4 mt-4 pt-2">
+                    <div class="contact-detail text-center">
+                        <div class="icon">
+                            <i data-feather="mail" class="fea icon-md"></i>
+                        </div>
+                        <div class="content mt-4">
+                            <h5 class="title text-uppercase">Email</h5>
+                            <!-- TODO add JS to copy to clipboard -->
+                            <p class="text-muted">Copy address to use in <br>your preferred email client</p>
+                            <a href="mailto:john.winko@gmail.com" class="text-primary">john.winko@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+
+                <div class="col-md-4 mt-4 pt-2">
+                    <div class="contact-detail text-center">
+                        <div class="icon">
+                            <i data-feather="map-pin" class="fea icon-md"></i>
+                        </div>
+                        <div class="content mt-4">
+                            <h5 class="title text-uppercase">Serving</h5>
+                            <p class="text-muted">Chicago / Milwaukee <br>(60099)</p>
+                            <a href="https://www.google.com/maps/place/Zion,+IL+60099/@42.5046088,-88.4240906,9.5z/data=!4m5!3m4!1s0x880f896dc32b4fa1:0x4dac4de857e20803!8m2!3d42.4424515!4d-87.8451527"
+                                target="_blank" class="video-play-icon text-primary">View on Google map</a>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+    </section>
+    <!--end section-->
+    <!-- Contact End -->
+
+    <!-- Footer Start -->
+    <footer class="footer bg-dark">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <a href="#"><img src="/images/Icons/JW_Logo_white.svg" height="40" alt=""></a>
+                    <ul class="list-unstyled mb-0 mt-4 social-icon">
+                        <li class="list-inline-item"><a href="https://www.facebook.com/john.winko" target="_blank"><i
+                                    class="mdi mdi-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item"><a href="https://twitter.com/JohnWinko" target="_blank"><i
+                                    class="mdi mdi-twitter"></i></a>
+                        </li>
+                        <li class="list-inline-item"><a href="https://github.com/john-winko" target="_blank"><i
+                                    class="mdi mdi-github-box"></i></a>
+                        </li>
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/john-winko" target="_blank"><i
+                                    class="mdi mdi-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+    </footer>
+    <!--end footer-->
+    <footer class="footer footer-bar bg-dark">
+        <div class="container text-foot text-center">
+            <p class="mb-0">©
+                <script>
+                    document.write(new Date().getFullYear())
+                </script>
+                Cristino, modified by John Winko.
+            </p>
+        </div>
+        <!--end container-->
+    </footer>
+    <!--end footer-->
+    <!-- Footer End -->
+
+    <!-- Back to top -->
+    <a href="#" onclick="topFunction()" class="back-to-top rounded text-center" id="back-to-top">
+        <i class="mdi mdi-chevron-up d-block"> </i>
+    </a>
+    <!-- Back to top -->
+
+    <!-- javascript -->
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <!-- SLIDER -->
+    <script src="/js/tiny-slider.js "></script>
+    <script src="/js/tiny-slider-init.js "></script>
+    <!-- MK Lightbox -->
+    <script src="/js/mklb.js"></script>
+    <script src="/js/filter.init.js"></script>
+    <!-- Feather icon -->
+    <script src="/js/feather.min.js"></script>
+
+    <!-- Main Js -->
+    <script src="/js/app.js"></script>
+</body>
+
+</html>

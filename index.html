@@ -234,7 +234,8 @@
                 </div>
                 <div class="col-lg-1 col-md-2 col-4 m-3 d-flex justify-content-center">
                     <div class="p-3 rounded-pill interests-desc">
-                        <img title="Bootstrap 5" alt="Bootstrap 5" src="/images/Technologies/bootstrap5.svg" height="60px">
+                        <img title="Bootstrap 5" alt="Bootstrap 5" src="/images/Technologies/bootstrap5.svg"
+                            height="60px">
                     </div>
                 </div>
                 <div class="col-lg-1 col-md-2 col-4 m-3 d-flex justify-content-center">
@@ -647,7 +648,8 @@
                                         <p class="timeline-subtitle mt-3 mb-0 text-muted">As part of my transition
                                             timeline, attending the self-paced bootcamp from Coder Foundry
                                             to learn HTML, CSS, Javascript, .Net, MVC, and Postgres. Developed this
-                                            website, coding challenge sites and independant web based applications listed
+                                            website, coding challenge sites and independant web based applications
+                                            listed
                                             in my portofolio.
                                         </p>
                                     </div>
@@ -710,16 +712,16 @@
                     <div class="section-title">
                         <div class="titles">
                             <div class="d-none d-md-block">
-                                <h4 class="title title-line text-uppercase mb-4 pb-4">My Portfolio</h4>
+                                <a href="/Portfolio/page-portfolio.html" style="color: white">
+                                    <h4 class="title title-line text-uppercase mb-4 pb-4">Highlighted Projects</h4>
+                                </a>
                                 <span></span>
                             </div>
                             <div class="d-block d-md-none">
-                                <h4 class="title text-uppercase mb-2 pb-2">My Portfolio</h4>
+                                <h4 class="title text-uppercase mb-2 pb-2">Highlighted Projects</h4>
                             </div>
                         </div>
                     </div>
-                    <p class="text-muted mx-auto para-desc mb-0">Some of the works I have completed. Click "More
-                        Works" below to see my full portfolio.</p>
                 </div>
             </div>
             <!--end col-->
@@ -728,25 +730,6 @@
 
 
         <div class="container">
-            <div class="row mt-4">
-                <ul class="col portfolioFilter text-center mb-0" id="filter">
-                    <li class="list-inline-item mt-2"><a href="javascript:void(0)"
-                            class="categories tab-active shadow active text-dark me-2 py-2 px-3 rounded"
-                            onclick="filterSelection('all')">All</a></li>
-                    <li class="list-inline-item mt-2"><a href="javascript:void(0)"
-                            class="categories tab-active shadow text-dark me-2 py-2 px-3 rounded"
-                            onclick="filterSelection('challenges')">Coding Challenges</a></li>
-                    <li class="list-inline-item mt-2"><a href="javascript:void(0)"
-                            class="categories tab-active shadow text-dark me-2 py-2 px-3 rounded"
-                            onclick="filterSelection('applications')">Websites/Applications</a></li>
-                    <li class="list-inline-item mt-2"><a href="javascript:void(0)"
-                            class="categories tab-active shadow text-dark me-2 py-2 px-3 rounded"
-                            onclick="filterSelection('tools')">Tools</a></li>
-                    <li class="list-inline-item mt-2"><a href="javascript:void(0)"
-                            class="categories tab-active shadow text-dark me-2 py-2 px-3 rounded"
-                            onclick="filterSelection('opensource')">Open Source Work</a></li>
-                </ul>
-            </div>
             <!-- Gallary -->
             <div class="row">
                 <div class="col-lg-4 col-md-6 mt-4 pt-2 filter-box applications">
@@ -794,11 +777,11 @@
                 <div class="col-lg-4 col-md-6 mt-4 pt-2 filter-box challenges">
                     <div class="item-box portfolio-box rounded shadow bg-white overflow-hidden">
                         <div class="portfolio-box-img position-relative overflow-hidden">
-                            <img class="item-container img-fluid mx-auto" src="/images/portfolio/Acolyte1.jpg"
+                            <img class="item-container img-fluid mx-auto" src="/images/portfolio/Blog.jpg"
                                 alt="1" />
                             <div class="overlay-work">
                                 <div class="work-content text-center">
-                                    <a href="javascript:void(0)" data-src="/images/portfolio/Acolyte1.png"
+                                    <a href="javascript:void(0)" data-src="/images/portfolio/Blog.jpg"
                                         data-gallery="myGal"
                                         class="text-light work-icon bg-dark d-inline-block rounded-pill mfp-image"><i
                                             data-feather="camera" class="fea icon-sm image-icon"></i></a>
@@ -806,79 +789,19 @@
                             </div>
                         </div>
                         <div class="gallary-title py-4 text-center">
-                            <h5><a href="/Portfolio/rewind.html" class="title text-dark">Rewind (Reverse String)</a>
+                            <h5><a href="/Portfolio/Blog.html" class="title text-dark">Blogging Website</a>
                             </h5>
-                            <span>Coding Challenge</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 mt-4 pt-2 filter-box challenges">
-                    <div class="item-box portfolio-box rounded shadow bg-white overflow-hidden">
-                        <div class="portfolio-box-img position-relative overflow-hidden">
-                            <img class="item-container img-fluid mx-auto" src="/images/portfolio/4.jpg" alt="1" />
-                            <div class="overlay-work">
-                                <div class="work-content text-center">
-                                    <a href="javascript:void(0)" data-src="/images/portfolio/4.jpg" data-gallery="myGal"
-                                        class="text-light work-icon bg-dark d-inline-block rounded-pill mfp-image"><i
-                                            data-feather="camera" class="fea icon-sm image-icon"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallary-title py-4 text-center">
-                            <h5><a href="/Portfolio/fizzbuzz.html" class="title text-dark">Fizz Buzz</a></h5>
-                            <span>Coding Challenge</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 mt-4 pt-2 filter-box challenges">
-                    <div class="item-box portfolio-box rounded shadow bg-white overflow-hidden">
-                        <div class="portfolio-box-img position-relative overflow-hidden">
-                            <img class="item-container img-fluid mx-auto" src="/images/portfolio/5.jpg" alt="1" />
-                            <div class="overlay-work">
-                                <div class="work-content text-center">
-                                    <a href="javascript:void(0)" data-src="/images/portfolio/5.jpg" data-gallery="myGal"
-                                        class="text-light work-icon bg-dark d-inline-block rounded-pill mfp-image"><i
-                                            data-feather="camera" class="fea icon-sm image-icon"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallary-title py-4 text-center">
-                            <h5><a href="/Portfolio/tacocat.html" class="title text-dark">Taco Cat (Palindrome)</a></h5>
-                            <span>Coding Challenge</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 mt-4 pt-2 filter-box challenges applications">
-                    <div class="item-box portfolio-box rounded shadow bg-white overflow-hidden">
-                        <div class="portfolio-box-img position-relative overflow-hidden">
-                            <img class="item-container img-fluid mx-auto" src="/images/portfolio/6.jpg" alt="1" />
-                            <div class="overlay-work">
-                                <div class="work-content text-center">
-                                    <a href="javascript:void(0)" data-src="/images/portfolio/6.jpg" data-gallery="myGal"
-                                        class="text-light work-icon bg-dark d-inline-block rounded-pill mfp-image"><i
-                                            data-feather="camera" class="fea icon-sm image-icon"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallary-title py-4 text-center">
-                            <h5><a href="/Portfolio/loanshark.html" class="title text-dark">Loan Shark</a></h5>
-                            <span>Application, Coding Challenge</span>
+                            <span>Website</span>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-lg-12 mt-4 pt-2">
-                    <div class="text-center">
-                        <a href="/Portfolio/page-portfolio.html" class="btn btn-outline-primary">More works <i
-                                data-feather="refresh-cw" class="fea icon-sm"></i></a>
-                    </div>
+                <div class="text-center">
+                    <a href="/Portfolio/page-portfolio.html" class="btn btn-outline-primary rounded mt-4" style="width: auto;">Full
+                        Portfolio</a>
                 </div>
-                <!--end col-->
             </div>
             <!--end row-->
         </div>
@@ -1207,7 +1130,7 @@
                 <script>
                     document.write(new Date().getFullYear())
                 </script>
-                Cristino, modified by John Winko.
+                 John Winko
             </p>
         </div>
         <!--end container-->
